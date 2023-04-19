@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    margin: 0;
+  }
+  
+  
+  header {
+    background-color: #4285f4;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    color: #4285f4;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  button:active {
+    background-color: #c2c2c2;
+  }
+  
+  main {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .settings {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+  
+  input[type="number"] {
+    width: 40px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  input[type="color"] {
+    margin-left: 16px;
+    height: 24px;
+    width: 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #diceContainer {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .die {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border: 1px solid #4285f4;
+  }
+  
+  .die:hover {
+    transform: scale(1.2);
+  }
+  
+  .color-picker {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .die:hover .color-picker {
+    opacity: 1;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .die {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+    
+    .color-picker {
+      bottom: -15px;
+      right: -15px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
